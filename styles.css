@@ -1,6 +1,8 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); */
 /* import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap'); */
 @import url('"https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap"');
+/* @media screen and (max-width: 600px) { */
+
 
 body {
   /* font-family: 'Roboto', sans-serif; */
@@ -9,6 +11,15 @@ body {
   font-family: "Montserrat", sans-serif;
   /* color:red; */
   /* background-color: #F6F4E6; */
+
+}
+ol,ul
+{
+  padding-inline-start:0px;
+}
+.word-wrap
+{
+  word-wrap: break-word;
 }
 .foot
 {
@@ -18,6 +29,7 @@ body {
 .proj-box
 {
   margin: auto;
+
   display: block;
   width: 50%;
   text-align: left;
@@ -191,17 +203,18 @@ hr {
 }
 .fSize
 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
+
 .intro {
   text-align: center;
   padding: 1.5em;
   /* padding-bottom: : 1.5rem; */
 
   font-size: 1.5rem;
-  /* background-color: #FBD46D; */
-  /* font-size: 2rem; */
-  /* background-color: #F1F1F1; */
+/* max-width: 600px; */
+/* min-width: 400px; */
+
 }
 
 .middle {
@@ -241,7 +254,7 @@ hr {
 p {
   font-family: 'Roboto', sans-serif;
   font-weight: 70;
-  font-size: 17.3px;
+  /* font-size: 17.3px; */
 }
 
 /
@@ -303,6 +316,7 @@ p {
 h2
 {
   font-size: 1.5em;
+  margin-bottom: 1rem;
 }
 .head
 {
@@ -321,4 +335,42 @@ h2
   {
     z-index: 2;
   }
-  
+
+.subtitle
+{
+  color:#373737;
+
+}
+
+
+
+
+  @media (max-width: 700px){
+    .proj-box{
+      width: 80%;
+    }
+
+    .proj{
+      width: 100%
+    }
+.mid-intro
+    {
+      width:80%;
+    }
+
+    .nav-menu{
+      display: flex;
+      justify-content: space-between;
+      margin: 0px;
+    }
+    .brand{
+      margin: 1rem;
+      margin-bottom: 0;
+      padding: 0;
+    }
+
+    .end-footer{
+      padding: 0.5rem;
+      display: block;
+    }
+  }
